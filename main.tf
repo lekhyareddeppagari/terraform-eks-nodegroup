@@ -5,7 +5,7 @@ data "aws_subnets" "available-subnets"{
     }
 }
 
-resource "aws_eks_cluster" "ankit-cluster" {
+resource "aws_eks_cluster" "ankit-cluster-dev" {
   name     = "ankit-cluster"
   role_arn = aws_iam_role.example.arn
 
